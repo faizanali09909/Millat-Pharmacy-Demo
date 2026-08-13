@@ -9,9 +9,9 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 llm = LLM(model="groq/llama-3.1-8b-instant", api_key=GROQ_API_KEY)
 
-st.set_page_config(page_title="Iqra Book Store — Owner Panel")
+st.set_page_config(page_title="Millat Pharmacy — Owner Panel")
 
-st.title("Iqra Book Store — Owner Panel")
+st.title("Millat Pharmacy — Owner Panel")
 
 if not GROQ_API_KEY:
     st.error("GROQ_API_KEY is missing. Add it in Streamlit Cloud → Manage app → Settings → Secrets.")
